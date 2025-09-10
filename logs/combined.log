@@ -1142,3 +1142,4 @@
 {"level":"info","message":"Redis Client Connected","service":"stablebank-api","timestamp":"2025-09-10 05:18:38"}
 {"level":"info","message":"Redis Client Ready","service":"stablebank-api","timestamp":"2025-09-10 05:18:39"}
 {"level":"info","message":"Redis connection established successfully","service":"stablebank-api","timestamp":"2025-09-10 05:18:39"}
+{"apiKey":"missing","environment":"sandbox","level":"info","message":"Initializing Lithic client with config:","service":"stablebank-api","timestamp":"2025-09-10 18:44:32"}

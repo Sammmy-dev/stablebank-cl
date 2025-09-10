@@ -1,7 +1,13 @@
 "use strict";
 const { DataTypes } = require("sequelize");
-const sequelize = require("../../config/database");
 const bcrypt = require("bcryptjs");
+const path = require("path");
+
+// Get sequelize instance from config
+const config = require(path.join(__dirname, "../../config/config.js"));
+const { Sequelize } = require("sequelize");
+const env = process.env.NODE_ENV || "development";
+const sequelize = new Sequelize(config[env]);
 
 module.exports = sequelize.define(
   "user",
