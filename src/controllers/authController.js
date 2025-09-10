@@ -1,12 +1,12 @@
 const jwtManager = require("../utils/jwt");
 const { AppError } = require("../middleware/errorHandler");
 const logger = require("../utils/logger");
-const user = require("../../db/models/user");
+const { User: user } = require("../../db/models");
 const bcrypt = require("bcryptjs");
 const { sendEmailOTP } = require("../utils/mailersend");
 const crypto = require("crypto");
 const custodialLite = require("../utils/custodialLite");
-const wallet = require("../../db/models/wallet");
+const { Wallet: wallet } = require("../../db/models");
 const { log } = require("console");
 
 exports.register = async (req, res, next) => {
