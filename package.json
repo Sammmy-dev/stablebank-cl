@@ -32,6 +32,7 @@
     "qrcode": "^1.5.4",
     "redis": "^4.7.1",
     "sequelize": "^6.37.7",
+    "sequelize-cli": "^6.6.3",
     "uuid": "^9.0.1",
     "viem": "^2.31.7",
     "winston": "^3.17.0",
@@ -44,7 +45,6 @@
     "@types/node": "^24.0.1",
     "hardhat": "^2.26.1",
     "nodemon": "^3.1.10",
-    "sequelize-cli": "^6.6.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }
