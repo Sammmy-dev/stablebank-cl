@@ -26,7 +26,7 @@ COPY --from=builder /app/config ./config
 COPY --from=builder /app/.sequelizerc ./
 
 # Set environment variables
-ENV NODE_ENV=production
+ENV NODE_ENV=development
 
 # Expose port
 EXPOSE 3000

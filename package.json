@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node src/server.js",
-    "migrate": "NODE_ENV=production npx sequelize-cli db:migrate --config config/config.js --migrations-path db/migrations",
+    "migrate": "NODE_ENV=development npx sequelize-cli db:migrate --config config/config.js --migrations-path db/migrations",
     "build": "npm run migrate",
     "deploy": "npm run migrate && npm start"
   },
