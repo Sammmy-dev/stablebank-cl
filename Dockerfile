@@ -23,6 +23,7 @@ COPY --from=builder /app/package*.json ./
 COPY --from=builder /app/src ./src
 COPY --from=builder /app/db ./db
 COPY --from=builder /app/config ./config
+COPY --from=builder /app/.sequelizerc ./
 
 # Set environment variables
 ENV NODE_ENV=production
