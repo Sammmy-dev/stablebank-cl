@@ -5,16 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node src/server.js",
-    "test:viem": "node test-viem.js",
-    "test:unified-balance": "node test-unified-balance.js",
-    "test:transfer": "node test-transfer.js",
-    "test:demo": "node test-demo-contract.js",
-    "test:web3-controller": "node test-web3-controller.js",
-    "compile": "npx hardhat compile",
-    "deploy:polygon-amoy": "node deploy-contract.js",
-    "deploy:points-system": "npx hardhat run scripts/deploy-points-system.js --network polygon",
-    "deploy:points-system-testnet": "npx hardhat run scripts/deploy-points-system.js --network polygon-amoy",
-    "migrate": "npx sequelize-cli db:migrate"
+    "migrate": "npx sequelize-cli db:migrate",
+    "build": "npm run migrate",
+    "deploy": "npm run migrate && npm start"
   },
   "keywords": [],
   "author": "",
