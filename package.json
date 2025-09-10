@@ -2,10 +2,13 @@
   "name": "stablebank-server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "start": "node src/server.js",
-    "migrate": "NODE_ENV=development npx sequelize-cli db:migrate --config config/config.js --migrations-path db/migrations",
+    "migrate": "npx sequelize-cli db:migrate",
     "build": "npm run migrate",
     "deploy": "npm run migrate && npm start"
   },
@@ -17,7 +20,6 @@
     "axios": "^1.10.0",
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
-    "crypto": "^1.0.1",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "express-rate-limit": "^7.5.0",
