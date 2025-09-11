@@ -10,8 +10,8 @@
 
 ### 2. Configure Build Settings
 
-- **Build Command:** `npm run build`
-- **Start Command:** `npm start`
+- **Build Command:** `npm install`
+- **Start Command:** `npm run deploy`
 
 ### 3. Environment Variables
 
