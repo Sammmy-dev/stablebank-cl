@@ -26,10 +26,10 @@ COPY --from=builder /app/config ./config
 COPY --from=builder /app/.sequelizerc ./
 
 # Set environment variables
-ENV NODE_ENV=development
+ENV NODE_ENV=production
 
 # Expose port
 EXPOSE 3000
 
-# Start the application
-CMD ["npm", "start"] 
+# Start the application with migrations
+CMD ["npm", "run", "deploy"] 
